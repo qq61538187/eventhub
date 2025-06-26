@@ -1,0 +1,49 @@
+{
+  "name": "zhiaiwan-eventhub",
+  "version": "1.0.0",
+  "author": "Lixiaofei 61538187@qq.com",
+  "description": "EventHub is a lightweight event hub library for JavaScript and TypeScript, designed to facilitate event-driven programming with a focus on simplicity and performance.",
+    "bugs": {
+    "url": "https://github.com/qq61538187/zhiaiwan-eventhub/issues"
+  },
+  "homepage": "https://github.com/qq61538187/zhiaiwan-eventhub",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "scripts": {
+    "build": "rm -fr dist && pnpm rollup -c",
+    "build:hot": "pnpm rollup -c --watch",
+    "lint": "npx prettier --write ./src",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "check": "biome check --write --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qq61538187/zhiaiwan-eventhub.git"
+  },
+  "keywords": [
+    "zhiaiwan",
+    "event",
+    "utils"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "^2.29.5",
+    "@rollup/plugin-alias": "^4.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.7.15",
+    "rollup": "^3.20.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.0"
+  },
+  "umdModuleName": "EventHub"
+}
