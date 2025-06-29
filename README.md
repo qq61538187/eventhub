@@ -1,11 +1,11 @@
 
-# zhiaiwan-eventhub
+# @zhiaiwan/eventhub
 
 一个轻量、高效、功能丰富的 TypeScript 事件调度工具，适用于前端组件通信、插件架构、状态管理等各种场景。
 
 ## 🧩 介绍
 
-`zhiaiwan-eventhub` 提供灵活的事件管理机制，支持事件注册、取消、优先级、通配符监听、异步触发等特性，适合用于构建可扩展、低耦合的系统架构。
+`@zhiaiwan/eventhub` 提供灵活的事件管理机制，支持事件注册、取消、优先级、通配符监听、异步触发等特性，适合用于构建可扩展、低耦合的系统架构。
 
 ## 🚀 特性
 
@@ -24,19 +24,19 @@
 将 `eventhub.ts` 和 `types.ts` 文件复制到你的项目中并引入：
 
 ```javascript
-import { eventHub } from "zhiaiwan-eventhub";
+import { eventHub } from "@zhiaiwan/eventhub";
 ```
 
 #### CJS
 
 ```javascript
-const { eventHub } = require("zhiaiwan-eventhub");
+const { eventHub } = require("@zhiaiwan/eventhub");
 ```
 
 #### 浏览器中
 
 ```html
-<script src="./node_modules/zhiaiwan-eventhub/dist/umd/index.js"></script>
+<script src="./node_modules/@zhiaiwan/eventhub/dist/umd/index.js"></script>
 <script>
   console.log(eventHub);
 </script>
@@ -57,7 +57,7 @@ const hub = new EventHub();
 ## 直接使用全局的单例
 
 ```javascript
-import { eventHub } from "zhiaiwan-eventhub";
+import { eventHub } from "@zhiaiwan/eventhub";
 const hub = eventHub;
 ```
 

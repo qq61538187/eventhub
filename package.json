@@ -1,12 +1,12 @@
 {
-  "name": "zhiaiwan-eventhub",
+  "name": "@zhiaiwan/eventhub",
   "version": "1.0.0",
   "author": "Lixiaofei 61538187@qq.com",
   "description": "EventHub is a lightweight event hub library for JavaScript and TypeScript, designed to facilitate event-driven programming with a focus on simplicity and performance.",
     "bugs": {
-    "url": "https://github.com/qq61538187/zhiaiwan-eventhub/issues"
+    "url": "https://github.com/qq61538187/eventhub/issues"
   },
-  "homepage": "https://github.com/qq61538187/zhiaiwan-eventhub",
+  "homepage": "https://github.com/qq61538187/eventhub",
   "main": "./dist/cjs/index.js",
   "types": "./dist/cjs/index.d.ts",
   "module": "./dist/esm/index.js",
@@ -25,11 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qq61538187/zhiaiwan-eventhub.git"
+    "url": "https://github.com/qq61538187/eventhub.git"
   },
   "keywords": [
     "zhiaiwan",
     "event",
+    "eventhub",
     "utils"
   ],
   "license": "ISC",
